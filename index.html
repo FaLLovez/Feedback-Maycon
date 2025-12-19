@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback de Atendimento | RP FILHO</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Feedback de Atendimento do Maycon</h1>
+    <h3 class="subtitle">
+      Este feedback é exclusivo sobre o atendimento de Maycon, não possuindo qualquer relação com a empresa.
+      O objetivo é unicamente contribuir para a melhoria contínua do meu atendimento.
+    </h3>
+
+    <!-- DESTAQUE MÉDIA -->
+    <div class="rating-highlight">
+      <span id="highlightStars">⭐ 0,0 / 5</span>
+      <small id="highlightCount">Avaliado por 0 clientes</small>
+    </div>
+
+    <!-- FORMULÁRIO -->
+    <div class="card">
+      <h3>Avalie meu atendimento</h3>
+
+      <label>Nota do atendimento *</label>
+      <div class="stars" id="starRating"></div>
+
+      <h4>Comentário</h4>
+      <textarea id="comment" rows="4"
+        placeholder="O que foi positivo no atendimento?
+O que poderia melhorar?"></textarea>
+
+      <div class="options">
+        <label>
+          <input type="radio" name="identity" value="identified" checked>
+          Quero me identificar
+        </label>
+        <label>
+          <input type="radio" name="identity" value="anonymous">
+          Prefiro permanecer anônimo
+        </label>
+      </div>
+
+      <div id="nameField">
+        <h4>Nome - Empresa (opcional)</h4>
+        <input type="text" id="name" placeholder="Seu nome - Empresa">
+      </div>
+      <div>
+        <h4>Segestão de avaliação</h4>
+      </div>
+      <div class="checkboxes">
+        <label><input type="checkbox" value="Atendimento rápido"> Atendimento rápido</label>
+        <label><input type="checkbox" value="Educação e cordialidade"> Educação e cordialidade</label>
+        <label><input type="checkbox" value="Clareza nas informações"> Clareza nas informações</label>
+        <label><input type="checkbox" value="Solução do problema"> Solução do problema</label>
+        <label><input type="checkbox" value="Poderia melhorar em alguns pontos"> Poderia melhorar em alguns pontos</label>
+      </div>
+
+      <button id="sendFeedback">Enviar feedback</button>
+
+      <p id="successMsg" class="success-msg">
+        ✅ Feedback enviado com sucesso. Obrigado!
+      </p>
+
+      <small class="privacy">
+        🔒 Sua avaliação é confidencial e usada apenas para melhoria do atendimento.
+      </small>
+    </div>
+
+    <!-- SUGESTÕES MAIS MARCADAS -->
+    <div class="card">
+      <h3>O que os clientes mais destacam</h3>
+      <div id="topSuggestions" class="top-suggestions"></div>
+    </div>
+
+    <!-- FEEDBACKS -->
+    <div class="feedbacks" id="feedbackList"></div>
+  </div>
+
+  <footer>
+    © SÓ PRA TER, DEPOIS ADICIONO FOOTTER
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
